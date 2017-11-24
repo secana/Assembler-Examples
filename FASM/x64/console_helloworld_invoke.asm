@@ -1,6 +1,3 @@
-; set environment variable "INCLUDE" to FASM INLCUDE folder.
-; Example: $env:INCLUDE = "C:\fasmw172\INCLUDE"
-
 format PE64 console 
 entry start 
 include 'win64a.inc' 

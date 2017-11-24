@@ -1,6 +1,3 @@
-; set environment variable "INCLUDE" to FASM INLCUDE folder.
-; Example: $env:INCLUDE = "C:\fasmw172\INCLUDE"
-
 ; Windows x64 calling convention
 ; First four parameters go to rcx, rdx, r8, r9
 ; Additional parameters go on stack (right to left)
