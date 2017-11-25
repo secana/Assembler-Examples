@@ -1,7 +1,12 @@
 # Flat Assembler
 Below you find a short description how the Flat Assembler (FASM) examples work.
 
-## Install FASM
+## Install FASM 
+You find a script **install_fasm.ps1** in this repository. Run the script in an elevated PowerShell terminal and follow the instructions. This will install FASM on you PC and add the needed environment variables to start working with FASM. 
+
+Alternatively you can install FASM manually. See below for instructions.
+
+## Install FASM manually
 You can get FASM for Windows from here [FASM for Windows](https://flatassembler.net/fasmw172.zip).
 
 To install FASM unpack the archive and put the folder somewhere on disk.
