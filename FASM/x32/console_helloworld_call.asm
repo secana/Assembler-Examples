@@ -13,12 +13,13 @@ section '.idata' import data readable writeable
         printf, 'printf'
 
 section '.data' data readable
-    szHelloWorld db 'Hello World',0
+    szHelloWorld db 'Hello World',10,0
 
-section '.code' code readable executable
+section '.text' code readable executable
     start:
         push szHelloWorld
         call [printf]
+        add esp, 4
     
     exit:
         push 0
