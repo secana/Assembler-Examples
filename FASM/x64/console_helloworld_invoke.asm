@@ -14,12 +14,12 @@ section '.idata' import data readable writeable
 
 
 section '.data' data readable
-    szHelloWorld db 'Hello World',0
+    szHelloWorld db 'Hello World',10,0
 
-section '.code' code readable executable 
+section '.text' code readable executable 
     start: 
         mov rax, szHelloWorld
-        invoke printf, rax
+        cinvoke printf, rax
 
     exit:
         invoke	ExitProcess, 0

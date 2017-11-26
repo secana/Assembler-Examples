@@ -13,11 +13,11 @@ section '.idata' import data readable writeable
         printf, 'printf'
 
 section '.data' data readable
-    szHelloWorld db 'Hello World',0
+    szHelloWorld db 'Hello World',10,0
 
 section '.code' code readable executable
     start:
-        invoke printf, szHelloWorld
+        cinvoke printf, szHelloWorld
 
     exit:
         invoke ExitProcess, 0

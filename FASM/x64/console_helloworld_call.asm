@@ -19,9 +19,9 @@ section '.idata' import data readable writeable
 
 
 section '.data' data readable
-    szHelloWorld db 'Hello World',0
+    szHelloWorld db 'Hello World',10,0
 
-section '.code' code readable executable 
+section '.text' code readable executable 
     start: 
         mov rcx, szHelloWorld
         sub rsp, 0x20
