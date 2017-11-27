@@ -23,5 +23,7 @@ Set the environment variable **INCLUDE** to the **INCLUDE** directory in the FAS
 To uninstall FASM manually you have to reverse the steps from the manual installation above. First delete the folder containing FASM. Then delete the **INCLUDE** environment variable and remove the FASM path from the **PATH** environment variable.
 
 ## Compile the code
-To compile an example just run `FASM.exe name_of_example.asm`. This creates an executable file which can be run.
+To compile an example just run `FASM.exe <source> [output]`. 
+
+For example `FASM.exe HelloWorld.asm`. This creates an executable called *HelloWorld.exe* which can be run. You can specify another output name by setting the *output* parameter for FASM.exe.
 
