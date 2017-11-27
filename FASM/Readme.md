@@ -4,12 +4,12 @@ Below you find a short description how the Flat Assembler (FASM) examples work.
 ## Installing and Uninstalling FASM
 Below you'll find information on how to install and uninstall FASM from your Windows machine.
 ### Install FASM 
-You find a script **install_fasm.ps1** in this repository. Run the script in an elevated PowerShell terminal and follow the instructions. This will install FASM on you PC and add the needed environment variables to start working with FASM. 
+You find a script [install_fasm.ps1](install_fasm.ps1) in this repository. Run the script in an elevated PowerShell terminal and follow the instructions. This will install FASM on you PC and add the needed environment variables to start working with FASM. 
 
 Alternatively you can install FASM manually. See below for instructions.
 
 ### Uninstall FASM
-You find a script **uninstall_fasm.ps1** in this repository. Run the script in an elevated PowerShell terminal to uninstall FASM automatically.
+You find a script [uninstall_fasm.ps1](uninstall_fasm.ps1) in this repository. Run the script in an elevated PowerShell terminal to uninstall FASM automatically.
 
 ### Install FASM manually
 You can get FASM for Windows from here [FASM for Windows](https://flatassembler.net/fasmw172.zip).
