@@ -23,8 +23,8 @@ section '.data' data readable
     strlen = 256
 
 section '.bss' data readable writeable
-    szString1 rb strlen
-    szString2 rb strlen
+    szString1 db strlen dup 0   ; Don't use "rb strlen" here, since "rb" is unitialized
+    szString2 db strlen dup 0
     dwReadBytes rd 1
     hStdin rd 1
 
