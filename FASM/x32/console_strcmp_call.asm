@@ -20,13 +20,13 @@ section '.data' data readable
     szEnterString db 'Please enter a string: ',0
     szEqual db 'The strings are equal',10,0
     szNotEqual db 'The string are not equal',10,0
+    strlen = 256
 
 section '.bss' data readable writeable
-    strlen = 256
-    szString1 db strlen dup 0
-    szString2 db strlen dup 0
-    dwReadBytes dd 0
-    hStdin dd 0
+    szString1 rb strlen
+    szString2 rb strlen
+    dwReadBytes rd 1
+    hStdin rd 1
 
 section '.text' code readable executable
     start:
