@@ -40,7 +40,7 @@ section '.text' code readable executable
         cmp [ddNum], 2
         je isPrime
         cmp [ddNum], 3
-        je notPrime
+        je isPrime
 
         ; Check if number is even
         clc                 ; Clear the carry flag
