@@ -1,7 +1,7 @@
 #requires -version 4.0
 #requires -runasadministrator
 
-$fasmURL = "https://flatassembler.net/fasmw172.zip"
+$fasmURL = "https://flatassembler.net/fasmw17304.zip"
 
 function Get-DefaultInstallDir 
 {
