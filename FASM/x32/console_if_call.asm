@@ -49,7 +49,7 @@ section '.text' code readable executable
         push [dwNumber]
         push szLower
         call [printf]
-        add esp, 4
+        add esp, 8
 
     exit:
         push 0
