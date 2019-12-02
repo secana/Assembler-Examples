@@ -1,11 +1,11 @@
 #requires -version 4.0
 #requires -runasadministrator
 
-$fasmURL = "https://flatassembler.net/fasmw17304.zip"
+$fasmURL = "https://flatassembler.net/fasmw17320.zip"
 
 function Get-DefaultInstallDir 
 {
-    if(${env:ProgramFiles(x86)} -eq $null)
+    if($null -eq ${env:ProgramFiles(x86)})
     {
         $defInstallDir = $env:ProgramFiles
     }
@@ -46,7 +46,7 @@ function Set-EnvironemtVariables ($Path)
     $oldEnvPath += ";$Path"
     [Environment]::SetEnvironmentVariable("PATH", $oldEnvPath, "USER")
 
-    if($env:INCLUDE -eq $null)
+    if($null -eq $env:INCLUDE)
     {
         [Environment]::SetEnvironmentVariable("INCLUDE", "$Path\INCLUDE", "USER")
     }
