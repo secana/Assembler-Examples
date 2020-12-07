@@ -125,7 +125,7 @@ section '.text' code readable executable
         push [ddResult]
         sub rsp, 32
         call [printf]
-        add rsp, 32
+        add rsp, 48
 
     exit:
         mov rcx, 0
