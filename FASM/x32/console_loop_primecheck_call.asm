@@ -16,8 +16,8 @@ section '.idata' import data readable writeable
 section '.data' data readable
     szEnterNum db 'Please enter a number: ',0
     szNumFormat db '%d',0
-    szPrime db '%d is prime',0
-    szNotPrime db '%d is not prime',0
+    szPrime db '%d is prime',10,0
+    szNotPrime db '%d is not prime',10,0
 
 section '.bss' data readable writeable
     ddNum rd 1
