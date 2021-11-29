@@ -44,4 +44,4 @@ section '.text' code readable executable
         cinvoke printf, szResult, [dwFirstNum], [dwSecondNum], [dwResult]
 
     exit:
-        invoke ExitProcess
+        invoke ExitProcess, 0
