@@ -20,7 +20,7 @@ section '.data' data readable
     szOperandFormat db '%c',0
     szResultFormat db '%d %c %d = %d',10,0
     szResultDivFormat db '%d %c %d = %d, Remainder: %d',10,0
-    szUnknownOperand db 'Unkown operand',0
+    szUnknownOperand db 'Unknown operand',0
 
 section '.bss' data readable writable
     dbOperand rq 1
